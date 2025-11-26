@@ -18,7 +18,8 @@ Repositorio general del sistema de recomendación basado en **Razonamiento Basad
 │   └── similitud_coseno.py
 │
 ├── app/
-│   └── cbr_cafe_app
+│   └── api_cbr
+│	└── flutter_app
 │
 └── README_GENERAL.md
 ```
@@ -79,9 +80,7 @@ Ambos modelos están listos para reutilización directa en:
 
 ## 📂 3. app/
 
-### 🔹 cbr_cafe_app  
-
-Este directorio almacena el prototipo.  
+Este directorio contiene el prototipo del sistema. Su ejecución, estructura y detalles técnicos se encuentran explicados en el directorio flutter_app. 
 
 ---
 
