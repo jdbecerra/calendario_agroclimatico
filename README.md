@@ -17,8 +17,8 @@ Repositorio general del sistema de recomendación basado en **Razonamiento Basad
 │   ├── distancia_euclidiana.py
 │   └── similitud_coseno.py
 │
-├── api/
-│   └── api_cbr.py
+├── app/
+│   └── cbr_cafe_app
 │
 └── README_GENERAL.md
 ```
@@ -77,38 +77,11 @@ Ambos modelos están listos para reutilización directa en:
 
 ---
 
-## 📂 3. api/
+## 📂 3. app/
 
-### 🔹 api_cbr.py  
-Implementación de la **API REST** que expone el motor de razonamiento.  
+### 🔹 cbr_cafe_app  
 
-Funciones principales:
-- Recibe solicitudes JSON desde clientes web/móviles.
-- Ejecuta `run_cbr()` para procesar la consulta.
-- Envía recomendaciones, similitudes y casos relevantes.
-- Permite retención de nuevos casos (Dataset C).
-
----
-
-## 🚀 Ejecución del Backend
-
-Instalar dependencias:
-
-```bash
-pip install fastapi uvicorn pyyaml
-```
-
-Ejecutar API:
-
-```bash
-uvicorn api_cbr:app --reload --port 8000
-```
-
-Endpoint principal:
-
-```
-POST /cbr/recomendar
-```
+Este directorio almacena el prototipo.  
 
 ---
 
@@ -145,11 +118,6 @@ Este repositorio permite:
 - Integrar módulos con apps externas (Flutter/Web/API).
 - Desarrollar nuevos modelos de similitud o dominios agrícolas.
 - Facilitar investigación en sistemas expertos y agricultura digital.
-
----
-
-## 📄 Licencia
-(Agregar MIT, Apache 2.0 o equivalente)
 
 ---
 
